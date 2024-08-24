@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo transparente o del color que desees -->
+    <item android:drawable="@android:color/transparent" />
+
+    <!-- Borde blanco alrededor del fondo -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" /> <!-- Color blanco para el borde -->
+            <stroke
+                android:width="3dp"
+                android:color="@color/celeste" /> <!-- Color del relleno interior (si se ve) -->
+            <corners android:radius="10dp" /> <!-- Esquinas redondeadas, ajusta el radio si es necesario -->
+        </shape>
+    </item>
+</layer-list>

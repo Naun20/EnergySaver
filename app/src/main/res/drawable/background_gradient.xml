@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Degradado lineal entre dos colores -->
+    <gradient
+        android:startColor="#673AB7"
+    android:endColor="#00BCD4"
+    android:angle="45" />
+
+    <!-- Esquinas redondeadas -->
+    <corners android:radius="20dp" />
+</shape>

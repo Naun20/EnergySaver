@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/celeste"
+    tools:context=".EficienciaEnergeticaFragment">
+
+    <!-- Contenedor ScrollView para permitir desplazamiento -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Contenedor principal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- CardView para el primer tema -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <!-- Contenido del primer tema -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/textViewTema"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Optimización del Consumo Energético en el Hogar"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:paddingBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/textViewSubtema"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Evaluación de Eficiencia Energética en el Hogar"
+                        android:textSize="18sp"
+                        android:paddingBottom="16dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- CardView para el segundo tema -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp">
+
+                <!-- Contenido del segundo tema -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/background_gradient"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/textViewTema2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calculadoras de Ahorro"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@android:color/white"
+                        android:paddingBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/textViewSubtema2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descubre herramientas para calcular el ahorro potencial de energía al implementar prácticas recomendadas. Haz clic para visualizar la calculadora."
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="@android:color/white"
+                        android:paddingBottom="16dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- FrameLayout para el RecyclerView -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp"
+                android:padding="0dp">
+
+                <!-- RecyclerView para mostrar guías o contenido adicional -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewEficiencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- FloatingActionButton fuera del ScrollView -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addeficiencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/add"
+        app:backgroundTint="#00BCD4"
+        app:tint="@android:color/white" />
+
+</FrameLayout>

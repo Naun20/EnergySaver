@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MostrarNoticiaFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Imagen de la noticia -->
+            <ImageView
+                android:id="@+id/imagen_noticia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/noticia_imagen_desc"/>
+
+            <!-- Título de la noticia -->
+            <TextView
+                android:id="@+id/titulo_noticia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp"/>
+
+            <!-- Descripción de la noticia -->
+            <TextView
+                android:id="@+id/descripción_noticia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingBottom="8dp"/>
+
+            <!-- Fecha de la noticia -->
+            <TextView
+                android:id="@+id/fechanoticia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingBottom="8dp"/>
+
+            <!-- Enlace de la noticia -->
+            <Button
+                android:id="@+id/btn_enlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/celeste"
+                android:text="Enlace"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Botón para volver -->
+    <Button
+        android:id="@+id/boton_volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:text="@string/volver"/>
+</FrameLayout>

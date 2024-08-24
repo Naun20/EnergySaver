@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.ejercicio2.energysaver.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.ejercicio2.energysaver.ui.gallery.GalleryFragment"
+        android:label="@string/label_ahorro_energia_industria"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.ejercicio2.energysaver.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_eficiencia"
+        android:name="com.ejercicio2.energysaver.EficienciaEnergeticaFragment"
+        android:label="@string/label_eficiencia_energetica"
+        tools:layout="@layout/fragment_eficiencia_energetica" />
+
+    <fragment
+        android:id="@+id/nav_ahorro"
+        android:name="com.ejercicio2.energysaver.AhorrohogarFragment"
+        android:label="@string/label_ahorro_energia_hogar"
+        tools:layout="@layout/fragment_ahorrohogar" />
+
+    <fragment
+        android:id="@+id/nav_uso_industria"
+        android:name="com.ejercicio2.energysaver.UsoEficienteIndustriasFragment"
+        android:label="@string/label_uso_eficiente_industrias"
+        tools:layout="@layout/fragment_uso_eficiente_industrias" />
+
+    <fragment
+        android:id="@+id/nav_eficiencia_industria"
+        android:name="com.ejercicio2.energysaver.EficienciaindustriaFragment"
+        android:label="@string/label_eficiencia_energetica_industrias"
+        tools:layout="@layout/fragment_eficienciaindustria" />
+
+    <fragment
+        android:id="@+id/nav_empresa"
+        android:name="com.ejercicio2.energysaver.UsoEficienteEmpresaFragment"
+        android:label="@string/label_uso_eficiente_empresa"
+        tools:layout="@layout/fragment_uso_eficiente_empresa" />
+
+    <fragment
+        android:id="@+id/nav_ahorroEmpresa"
+        android:name="com.ejercicio2.energysaver.AhorroEnergiaEmpresaFragment"
+        android:label="@string/label_ahorro_energia_empresa"
+        tools:layout="@layout/fragment_ahorro_energia_empresa" />
+    <fragment
+        android:id="@+id/nav_usuario"
+        android:name="com.ejercicio2.energysaver.UsuariosFragment"
+        android:label="@string/label_Usuario"
+        tools:layout="@layout/fragment_usuarios" />
+
+</navigation>

@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">EnergySaver</string>
+
+    <string name="txtnombreUsuario">Nombre y Apellido </string>
+    <string name="txtemail">Email </string>
+    <string name="txtdni">DNI </string>
+    <string name="txttelefono">Telefono </string>
+    <string name="txtUsuario">Usuario </string>
+    <string name="txtContrasena">Contraseña </string>
+    <string name="txttitulo">Titulo </string>
+
+
+    <string-array name="admin_types">
+        <item>Seleccione el tipo de Usuario</item>
+        <item>Administrador Regular</item>
+        <item>Administrador de Contenidos</item>
+        <item>Administrador de Usuarios</item>
+    </string-array>
+
+
+    <string name="default_web_client_id">16772343941-1ps24jf9k5ommnhqlpna14g24iiffaqe.apps.googleusercontent.com</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Usuario</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_close">Cerrar Sesion</string>
+
+    <string name="volver">Volver</string>
+    <string name="noticia_imagen_desc">Descripción de la imagen de la noticia</string>
+
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Hogar</string>
+    <string name="menu_novedades">Novedades</string>
+    <string name="menu_uso">Uso</string>
+    <string name="menu_consejo">Consejo</string>
+
+    <string name="add_news">Noticias</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Novedades -->
+    <string name="nombre">Nombre </string>
+    <string name="enlace">Enlace </string>
+    <string name="descripcion">Descipcion </string>
+    <string name="fecha">Fecha </string>
+
+
+    <string name="label_ahorro_energia_industria">Ahorro de Energía en la Industria</string>
+    <string name="label_eficiencia_energetica">Eficiencia Energética</string>
+    <string name="label_ahorro_energia_hogar">Ahorro de Energía en el Hogar</string>
+    <string name="label_uso_eficiente_industrias">Uso Eficiente de Energía en Industrias</string>
+    <string name="label_eficiencia_energetica_industrias">Eficiencia Energética en Industrias</string>
+    <string name="label_uso_eficiente_empresa">Uso Eficiente de la Energía Eléctrica</string>
+    <string name="label_ahorro_energia_empresa">Ahorro de Energía en Negocios/Empresas</string>
+    <string name="label_Usuario">Usuarios Administrador</string>
+</resources>

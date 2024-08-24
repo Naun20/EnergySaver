@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/imageViewconsejos"
+            android:layout_width="193dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/titleTextViewconsejos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Titulo"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/titleTextViewfecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Fecha"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/contenedor_botones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleTextViewconsejos"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:id="@+id/btn_editar_consejo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_background_blue"
+                android:padding="8dp"
+                app:srcCompat="@drawable/baseline_edit_24" />
+
+            <ImageView
+                android:id="@+id/btn_eliminar_consejo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_background_red"
+                android:padding="8dp"
+                app:srcCompat="@drawable/baseline_delete_24" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

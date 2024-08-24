@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/logo2"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_usuario"
+            android:icon="@drawable/baseline_co_present_24"
+            android:title="@string/label_Usuario" />
+
+        <item
+            android:id="@+id/nav_hogar"
+            android:icon="@drawable/logo2"
+            android:title="Hogar">
+            <menu>
+                <item
+                    android:id="@+id/nav_slideshow"
+                    android:icon="@drawable/uso"
+                    android:title="Uso Eficiente de la Energía " />
+                <item
+                    android:id="@+id/nav_eficiencia"
+                    android:icon="@drawable/uso"
+                    android:title="Eficiencia Energética" />
+                <item
+                    android:id="@+id/nav_ahorro"
+                    android:icon="@drawable/uso"
+                    android:title="Ahorro de Energía" />
+
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_industrias"
+            android:icon="@drawable/logo2"
+            android:title="Industrias">
+            <menu>
+                <item
+                    android:id="@+id/nav_uso_industria"
+                    android:icon="@drawable/industria"
+                    android:title="Uso Eficiente de Energía Eléctrica" />
+                <item
+                    android:id="@+id/nav_eficiencia_industria"
+                    android:icon="@drawable/industria"
+                    android:title="Eficiencia Energética Industrias" />
+                <item
+                    android:id="@+id/nav_gallery"
+                    android:icon="@drawable/industria"
+                    android:title="Ahorro de Energía" />
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_negocios"
+            android:icon="@drawable/logo2"
+            android:title="Negocios/Empresas">
+            <menu>
+                <item
+                    android:id="@+id/nav_empresa"
+                    android:icon="@drawable/empresa"
+                    android:title="Uso Eficiente de la Energía Eléctrica" />
+                <item
+                    android:id="@+id/nav_ahorroEmpresa"
+                    android:icon="@drawable/empresa"
+                    android:title="Ahorro de Energía" />
+            </menu>
+        </item>
+    </group>
+</menu>

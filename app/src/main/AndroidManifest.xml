@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permisos -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <!-- Considerar si se necesita este permiso en Android 11 o superior -->
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo4"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo4"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EnergySaver"
+        tools:targetApi="31">
+
+        <!-- Actividades -->
+        <activity
+            android:name=".CreateAhorroEmpresaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateEficienciaEmpresaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UsoEmpresactivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateConsejoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateCalculoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateProyectoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateEficienciaIndustriaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateNoticiaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateNovedadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateUsoIndustriasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateAhorroHogarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateEficienciaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConfiguracionesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuiaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/Theme.EnergySaver.NoActionBar" />
+        <activity
+            android:name=".RestablecerContrasenaActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".CreateUsuarioActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".LoginAdmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

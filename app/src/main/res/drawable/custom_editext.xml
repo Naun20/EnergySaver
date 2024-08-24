@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/custom_edittext_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo blanco -->
+    <item android:id="@+id/white_background">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" /> <!-- Color blanco -->
+            <corners android:radius="20dp" /> <!-- Esquinas redondeadas -->
+        </shape>
+    </item>
+
+    <!-- Borde celeste -->
+    <item android:id="@+id/celeste_border" android:top="3dp" android:bottom="3dp" android:left="3dp" android:right="3dp">
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="3dp"
+                android:color="@color/celeste" /> <!-- Color de borde celeste -->
+            <corners android:radius="20dp" /> <!-- Esquinas redondeadas -->
+        </shape>
+    </item>
+</layer-list>
